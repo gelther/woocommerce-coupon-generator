@@ -97,13 +97,13 @@ function wccg_generate_coupons( $number, $args = array() ) {
 
 		foreach ( $insert_coupon_ids as $coupon_id ) :
 
-			$insert_meta_values .= $wpdb->prepare( "(%d, %s, %s)", $coupon_id, sanitize_title( wp_unslash( $key ) ), maybe_serialize( wp_unslash( $value ) ) );
+			$insert_meta_values .= $wpdb->prepare( '(%d, %s, %s)', $coupon_id, sanitize_title( wp_unslash( $key ) ), maybe_serialize( wp_unslash( $value ) ) );
 
 			$meta_array_keys = array_keys( $meta_array );
 			if ( $key == end( $meta_array_keys ) && $coupon_id == end( $insert_coupon_ids ) ) :
-				$insert_meta_values .= ";";
+				$insert_meta_values .= ';';
 			else :
-				$insert_meta_values .= ", ";
+				$insert_meta_values .= ', ';
 			endif;
 
 		endforeach;
