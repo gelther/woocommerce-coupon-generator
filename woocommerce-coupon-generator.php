@@ -73,7 +73,7 @@ class WooCommerce_Coupon_Generator {
 	 * to use on other files/plugins/themes.
 	 *
 	 * @since 1.0.0
-	 * @return object Instance of the class.
+	 * @return  object  Instance of the class.
 	 */
 	public static function instance() {
 
@@ -153,13 +153,16 @@ class WooCommerce_Coupon_Generator {
  *
  * @since 1.0.0
  *
- * @return object WooCommerce_Coupon_Generator class object.
+ * @return  object  WooCommerce_Coupon_Generator class object.
  */
 if ( ! function_exists( 'WooCommerce_Coupon_Generator' ) ) :
 
- 	function WooCommerce_Coupon_Generator() {
+	function WooCommerce_Coupon_Generator() {
+
 		return WooCommerce_Coupon_Generator::instance();
+
 	}
+
 
 endif;
 
