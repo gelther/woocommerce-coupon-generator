@@ -60,7 +60,7 @@ function wccg_generate_coupons( $number, $args = array() ) {
 			current_time( 'mysql', 1 )
 		) );
 
-		$insert_coupon_ids[] = $wpdb->insert_id;
+		$insert_coupon_ids[  ] = $wpdb->insert_id;
 		$coupon_id           = $wpdb->insert_id;
 
 		// Set GUID
