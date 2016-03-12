@@ -103,7 +103,7 @@ class WCCG_Admin {
 	 */
 	public function add_wc_screen_id( $screen_ids ) {
 
-		$screen_ids[] = 'woocommerce_page_woocommerce_coupon_generator';
+		$screen_ids[  ] = 'woocommerce_page_woocommerce_coupon_generator';
 
 		return $screen_ids;
 
