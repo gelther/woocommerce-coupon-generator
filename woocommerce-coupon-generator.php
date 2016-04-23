@@ -1,4 +1,4 @@
-<?php
+<?PHP
 /**
  * Plugin Name: 	WooCommerce Coupon Generator
  * Plugin URI:
